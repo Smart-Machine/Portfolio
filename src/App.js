@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import {useRef} from 'react';
+import Header from './Header.js';
+import Landing from './Landing.js';
+import FeaturedProjects from './FeaturedProjects.js';
+import Contact from './Contact.js';
 
 function App() {
+  const refProjectButton = useRef(null);
+  const refContactButton = useRef(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header 
+        refProjectButton={refProjectButton} 
+        refContactButton={refContactButton}
+      />
+      <Landing />
+      <FeaturedProjects 
+        refProject={refProjectButton}
+      />
+      <Contact 
+        refContact={refContactButton}
+      />
+    </>
   );
 }
 

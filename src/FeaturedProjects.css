@@ -1,0 +1,24 @@
+.featuredProjectsComponent {
+    /* height: 100vh; */
+    background-color: var(--pink-gray);
+}
+
+.featuredProjectsComponent .gridContainer {
+    display: grid;
+    gap: 7%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.featuredProjectsComponent h3 {
+    position: relative;
+    padding-top: 5%;
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+    color: var(--flax);
+}

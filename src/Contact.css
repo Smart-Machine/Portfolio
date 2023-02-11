@@ -1,0 +1,93 @@
+.contactComponent {
+    background-color: var(--cool-gray);
+    font-size: 28px;
+    width: 100%;
+}
+
+.contactComponent h3 {
+    position: relative;
+    padding-top: 5%;
+    font-size: 36px;
+    text-align: center;
+    color: var(--flax); 
+}
+
+.contactComponent form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20%;
+    padding-top: 2%;
+}
+
+.contactComponent form label {
+    margin: 20px;
+    text-align: center;
+    color: var(--flax);
+}
+
+.contactComponent select, input, textarea, button {
+    font-size: 24px;
+    color: var(--flax);
+    border: 2px solid var(--flax);
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    border-radius: 6.25em;
+    background-color: transparent;
+}
+
+.contactComponent input[type=submit] {
+    padding: 1% 3% 1% 3%;
+    color: var(--flax);
+    cursor: pointer;
+}
+
+.contactComponent input[type=submit]:disabled {
+    color: gray; 
+    border: none;
+}
+
+.contactComponent input[type=submit]:hover {
+    color: var(--cadet-gray);
+    background-color: var(--flax);
+    border: 2px solid var(--cadet-gray);
+}
+
+.contactComponent textarea {
+    position: relative;
+    border-radius: 1.25em;
+    padding-left: 3%;
+    padding-right: 3%;
+    resize: none;
+}
+
+.contactComponent 
+input::placeholder,
+textarea::placeholder {
+    position: relative;
+    left: 1%;
+    color: var(--flax-fade);
+}
+
+.contactComponent 
+input:focus, 
+button:focus,
+textarea:focus, 
+select:focus {
+    border: 2px solid var(--coral-pink);
+    outline: none;
+}
+
+.contactComponent select {
+    width: 100%;
+    margin-top: 3%;
+    color: var(--flax);
+}
+
+.contactComponent select option {
+    background-color: var(--coral-pink);
+}
+
+
+
